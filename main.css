@@ -75,8 +75,8 @@ body {
     border-radius: 100%;
     background-image: linear-gradient(#d22906, #d22906, #f49d3e, #f1f0d2);
     box-shadow: inset 1px 1px 60px #d22906;
-    top: -5%;
-    right: -5%;
+    top: -6%;
+    right: -6%;
     z-index: 100;
 }
 
