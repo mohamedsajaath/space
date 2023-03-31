@@ -75,8 +75,8 @@ body {
     border-radius: 100%;
     background-image: linear-gradient(#d22906, #d22906, #f49d3e, #f1f0d2);
     box-shadow: inset 1px 1px 60px #d22906;
-    top: -2%;
-    right: -2%;
+    top: -5%;
+    right: -5%;
     z-index: 100;
 }
 
@@ -125,7 +125,7 @@ body {
     transition: all 5s ease-in;
 }
 
-.mercury:hover::before {
+/* .mercury:hover::before {
     content: 'Mercury';
     animation: textAnimate 2s;
     margin-top: 30px;
@@ -139,7 +139,7 @@ body {
     100% {
         margin-top: 30px;
     }
-}
+} */
 
 .venus {
     position: absolute;
@@ -156,7 +156,7 @@ body {
     font-weight: 800;
     font-size: small;
 }
-.venus:hover::after{
+/* .venus:hover::after{
     content: 'Venus';
     position: absolute;
     transform: rotate(5deg);
@@ -172,7 +172,7 @@ body {
     100% {
         margin-top: 55px;
     }
-}
+} */
 
 .mars {
     position: absolute;
@@ -182,7 +182,7 @@ body {
     background-image: linear-gradient(#842416, #ca4f2d, #e3803c, #f49842, #1c1b44);
     box-shadow: inset -10px -1px 10px #ffffff;
     top: 13%;
-    right: 45%;
+    right: 50%;
     z-index: 100;
     transform: rotate(-10deg);
     color: white;
@@ -190,7 +190,7 @@ body {
     font-size:large;
 }
 
-.mars:hover::after{
+/* .mars:hover::after{
     content: 'Mars';
     position: absolute;
     transform: rotate(10deg);
@@ -207,7 +207,7 @@ body {
     100% {
         margin-top: 100px;
     }
-}
+} */
 
 .jupiter {
     position: absolute;
@@ -236,16 +236,16 @@ body {
 
 }
 
-.jupiter:hover::before{
+/* .jupiter:hover::before{
     content: 'Jupiter';
     position: absolute;
     transform: rotate(10deg);
     margin-top: 200px;
     margin-left: 50px;
     animation: textAnimate4 2s;
-}
+} */
 
-@keyframes textAnimate4 {
+/* @keyframes textAnimate4 {
     0% {
         margin-top: 1000px;
     }
@@ -253,7 +253,7 @@ body {
     100% {
         margin-top: 200px;
     }
-}
+} */
 
 
 .saturn {
