@@ -1,0 +1,66 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    background-color: black;
+}
+.star1{
+    position: absolute;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    animation: staranimate1 5s infinite;
+}
+
+@keyframes staranimate1 {
+    0% {   background-color: white;}
+    50% {   background-color: rgb(0, 0, 0);}
+    100% {   background-color: white;}
+  }
+
+
+  .star2{
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    animation: staranimate2 2s infinite;
+}
+@keyframes staranimate2 {
+    0% {   background-color: white;}
+    25% {   background-color: rgb(255, 255, 255);}
+    50% {   background-color: rgb(0, 0, 0);}
+    75% {   background-color: rgb(255, 255, 255);}
+    100% {   background-color: white;}
+  }
+
+  .star3{
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+
+}
+
+.sun{
+    position: absolute;
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+    background-image: linear-gradient(#d22906,#d22906,#f49d3e, #f1f0d2);
+    box-shadow: inset 1px 1px 60px #d22906;
+    top: 10%;
+    right: 10%;
+    z-index: 100;
+}
+.sun::after{
+    content:'';
+    position: absolute;
+    width:200px;
+    height:200px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 1px 1px 30px #d22906;
+}
