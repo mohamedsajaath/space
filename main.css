@@ -1,9 +1,10 @@
-body{
+body {
     overflow: hidden;
     margin: 0;
     background-color: black;
 }
-.star1{
+
+.star1 {
     position: absolute;
     background-color: white;
     width: 5px;
@@ -13,13 +14,21 @@ body{
 }
 
 @keyframes staranimate1 {
-    0% {   background-color: white;}
-    50% {   background-color: rgb(0, 0, 0);}
-    100% {   background-color: white;}
-  }
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
 
 
-  .star2{
+.star2 {
     position: absolute;
     background-color: white;
     width: 2px;
@@ -27,15 +36,30 @@ body{
     border-radius: 100%;
     animation: staranimate2 2s infinite;
 }
-@keyframes staranimate2 {
-    0% {   background-color: white;}
-    25% {   background-color: rgb(255, 255, 255);}
-    50% {   background-color: rgb(0, 0, 0);}
-    75% {   background-color: rgb(255, 255, 255);}
-    100% {   background-color: white;}
-  }
 
-  .star3{
+@keyframes staranimate2 {
+    0% {
+        background-color: white;
+    }
+
+    25% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    75% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.star3 {
     position: absolute;
     background-color: white;
     width: 2px;
@@ -44,23 +68,228 @@ body{
 
 }
 
-.sun{
+.sun {
     position: absolute;
-    width:200px;
-    height:200px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
-    background-image: linear-gradient(#d22906,#d22906,#f49d3e, #f1f0d2);
+    background-image: linear-gradient(#d22906, #d22906, #f49d3e, #f1f0d2);
     box-shadow: inset 1px 1px 60px #d22906;
-    top: 10%;
-    right: 10%;
+    top: -2%;
+    right: -2%;
     z-index: 100;
 }
-.sun::after{
-    content:'';
+
+.sun::after {
+    content: '';
     position: absolute;
-    width:200px;
-    height:200px;
+    width: 300px;
+    height: 300px;
     background: transparent;
     border-radius: 100%;
     box-shadow: 1px 1px 30px #d22906;
+}
+
+.mercury {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: linear-gradient(#5406d2, #0681d2, #3eb1f4, #5406d2);
+    box-shadow: inset -10px -1px 10px #ffffff;
+    top: 20%;
+    right: 25%;
+    z-index: 100;
+    transform: rotate(-3deg);
+    color: white;
+    font-weight: 800;
+    font-size: smaller;
+}
+
+.mercury::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 1px 1px 40px #5406d2;
+}
+
+.mercury::before {
+    content: '';
+    position: absolute;
+
+    margin-top: 30px;
+    margin-left: -10px;
+    transition: all 5s ease-in;
+}
+
+.mercury:hover::before {
+    content: 'Mercury';
+    animation: textAnimate 2s;
+    margin-top: 30px;
+}
+
+@keyframes textAnimate {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
+}
+
+.venus {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: linear-gradient(#e9e9e9, #a7a7a7, #f7f8a5, #afafaf);
+    box-shadow: inset 10px 1px 10px #5e5757;
+    top: 30%;
+    right: 35%;
+    z-index: 100;
+    transform: rotate(-8deg);
+    color: white;
+    font-weight: 800;
+    font-size: small;
+}
+.venus:hover::after{
+    content: 'Venus';
+    position: absolute;
+    transform: rotate(5deg);
+    margin-top: 55px;
+    animation: textAnimate2 2s;
+}
+
+@keyframes textAnimate2 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: 55px;
+    }
+}
+
+.mars {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: linear-gradient(#842416, #ca4f2d, #e3803c, #f49842, #1c1b44);
+    box-shadow: inset -10px -1px 10px #ffffff;
+    top: 13%;
+    right: 45%;
+    z-index: 100;
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: 800;
+    font-size:large;
+}
+
+.mars:hover::after{
+    content: 'Mars';
+    position: absolute;
+    transform: rotate(10deg);
+    margin-top: 100px;
+    margin-left: 20px;
+    animation: textAnimate3 2s;
+}
+
+@keyframes textAnimate3 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: 100px;
+    }
+}
+
+.jupiter {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-image: linear-gradient(#e9e9e9, #e47e09, #f7f8a5, #afafaf);
+    box-shadow: inset -10px -1px 10px #ffffff;
+    top: 50%;
+    right: 60%;
+    z-index: 100;
+    transform: rotate(-8deg);
+    color: white;
+    font-weight: 800;
+    font-size:larger;
+}
+
+.jupiter::after {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background: transparent;
+    box-shadow: 1px 1px 10px #ffffff;
+
+}
+
+.jupiter:hover::before{
+    content: 'Jupiter';
+    position: absolute;
+    transform: rotate(10deg);
+    margin-top: 200px;
+    margin-left: 50px;
+    animation: textAnimate4 2s;
+}
+
+@keyframes textAnimate4 {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: 200px;
+    }
+}
+
+
+.saturn {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: linear-gradient(#e9e9e9, #a7a7a7, #f7f8a5, #afafaf);
+    box-shadow: inset 10px 1px 10px #5e5757;
+    top: 10%;
+    right: 80%;
+    z-index: 100;
+}
+
+.saturn::before {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 110px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 1px 5px 10px rgb(113, 113, 194);
+    margin-top: 5px;
+    margin-left: -60px;
+    transform: rotate(20deg);
+}
+
+.saturn::after {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 1px 5px 10px #4f9680;
+    margin-top: 5px;
+    margin-left: -60px;
+    transform: rotate(20deg);
 }
